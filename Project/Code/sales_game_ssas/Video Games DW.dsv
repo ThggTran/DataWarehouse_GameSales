@@ -1,0 +1,203 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bfbe26db-b288-4c31-8566-c99a0338a7a9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Video Games DW</ID>
+  <Name>Video Games DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Video Games DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Video_x0020_Games_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Video_x0020_Games_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="aca8ce5e-484b-4158-9389-36d68082d26a">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DimPlatform" msprop:design-time-name="1f7f6fb9-ec33-4560-a1bf-04ff2d2ab184" msprop:DbTableName="DimPlatform" msprop:FriendlyName="DimPlatform" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="3d3e9da2-d732-4586-96a3-04c161f21513" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="platform_name" msprop:design-time-name="0ad21568-af13-4160-ba0d-53ce64cbf2b8" msprop:DbColumnName="platform_name" msprop:FriendlyName="platform_name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimPublisher" msprop:design-time-name="82a368a7-344f-474a-8d1a-8a26e1dc2e7a" msprop:DbTableName="DimPublisher" msprop:FriendlyName="DimPublisher" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="098c9c00-df29-48a3-aea9-00d693458354" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="publisher_name" msprop:design-time-name="a6a6e6f6-3b3b-4d26-b61f-dc24e0c566bd" msprop:DbColumnName="publisher_name" msprop:FriendlyName="publisher_name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimRegion" msprop:design-time-name="1e05fdd6-c4a4-49cb-aeff-f5332dc54b90" msprop:DbTableName="DimRegion" msprop:FriendlyName="DimRegion" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="edb815bb-a729-4946-987c-e3fc0cf94c71" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="region_name" msprop:design-time-name="d5348808-d0b4-4078-ad6b-14613f5f93e6" msprop:DbColumnName="region_name" msprop:FriendlyName="region_name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimGame" msprop:design-time-name="75b2b8fd-053e-4c5d-900c-8dfc6d73bc2b" msprop:DbTableName="DimGame" msprop:FriendlyName="DimGame" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="3bf5d801-8406-4d60-b16c-4e29408f477b" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="genre_id" msprop:design-time-name="7136eb30-b458-4777-809d-1a89212713a0" msprop:DbColumnName="genre_id" msprop:FriendlyName="genre_id" type="xs:int" />
+                  <xs:element name="game_name" msprop:design-time-name="8ca54f86-ba20-4007-9724-f08e8bddc3a2" msprop:DbColumnName="game_name" msprop:FriendlyName="game_name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimGenre" msprop:design-time-name="bb22a454-859a-4fe9-bc48-aa38263afd96" msprop:DbTableName="DimGenre" msprop:FriendlyName="DimGenre" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="7a167d63-7b4d-4c80-8ae5-6be7ae2d5560" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="genre_name" msprop:design-time-name="669e24d6-df5f-44d3-997d-9741317100ea" msprop:DbColumnName="genre_name" msprop:FriendlyName="genre_name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimYear" msprop:design-time-name="f73feeef-d159-4da7-ae7f-7a9007837ec0" msprop:DbTableName="DimYear" msprop:FriendlyName="DimYear" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="a43b5a50-a65e-48c4-bdfa-9ce1cff578b9" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                  <xs:element name="release_year" msprop:design-time-name="58c7b67f-d7b4-4b1f-b32f-c3fbb5526cc4" msprop:DbColumnName="release_year" msprop:FriendlyName="release_year" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactGameSale" msprop:design-time-name="c02a2d78-dd41-4077-9dd2-04ed5476f962" msprop:DbTableName="FactGameSale" msprop:FriendlyName="FactGameSale" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="game_id" msprop:design-time-name="0fb6f4b3-022c-4ec9-8855-8682cce7dd0b" msprop:DbColumnName="game_id" msprop:FriendlyName="game_id" type="xs:int" />
+                  <xs:element name="publisher_id" msprop:design-time-name="ccf5ee38-23ea-4648-96a1-1beff80424ca" msprop:DbColumnName="publisher_id" msprop:FriendlyName="publisher_id" type="xs:int" />
+                  <xs:element name="platform_id" msprop:design-time-name="6c3ef79b-46cd-443d-a127-c4b640481213" msprop:DbColumnName="platform_id" msprop:FriendlyName="platform_id" type="xs:int" />
+                  <xs:element name="genre_id" msprop:design-time-name="2968dfad-30d6-4efb-a3a3-5abe27721c07" msprop:DbColumnName="genre_id" msprop:FriendlyName="genre_id" type="xs:int" />
+                  <xs:element name="region_id" msprop:design-time-name="159478ff-49d2-4302-acf7-ec4592b27c02" msprop:DbColumnName="region_id" msprop:FriendlyName="region_id" type="xs:int" />
+                  <xs:element name="year_id" msprop:design-time-name="f3fb21dc-b12d-4cda-b198-ff5fe08734a2" msprop:DbColumnName="year_id" msprop:FriendlyName="year_id" type="xs:int" />
+                  <xs:element name="num_sales" msprop:design-time-name="15c7d10e-b1a4-4fd8-880b-261f0af83b83" msprop:DbColumnName="num_sales" msprop:FriendlyName="num_sales" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimPlatform" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_DimPublisher_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimPublisher" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_DimRegion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimRegion" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_DimGame_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimGame" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_DimGenre_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimGenre" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_DimYear_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimYear" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_FactGameSale_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactGameSale" />
+          <xs:field xpath="game_id" />
+          <xs:field xpath="publisher_id" />
+          <xs:field xpath="platform_id" />
+          <xs:field xpath="genre_id" />
+          <xs:field xpath="region_id" />
+          <xs:field xpath="year_id" />
+        </xs:unique>
+        <xs:keyref name="FK_FactGameSale_game" refer="dbo_DimGame_Constraint1">
+          <xs:selector xpath=".//dbo_FactGameSale" />
+          <xs:field xpath="game_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactGameSale_region" refer="dbo_DimRegion_Constraint1">
+          <xs:selector xpath=".//dbo_FactGameSale" />
+          <xs:field xpath="region_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactGameSale_year" refer="dbo_DimYear_Constraint1">
+          <xs:selector xpath=".//dbo_FactGameSale" />
+          <xs:field xpath="year_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactGameSale_genre" refer="dbo_DimGenre_Constraint1">
+          <xs:selector xpath=".//dbo_FactGameSale" />
+          <xs:field xpath="genre_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactGameSale_platform" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactGameSale" />
+          <xs:field xpath="platform_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactGameSale_publisher" refer="dbo_DimPublisher_Constraint1">
+          <xs:selector xpath=".//dbo_FactGameSale" />
+          <xs:field xpath="publisher_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Video_x0020_Games_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>

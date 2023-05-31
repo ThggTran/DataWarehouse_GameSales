@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>sales_game</Database>
+    <Server>loptop</Server>
+    <ConnectionString>Data Source=loptop;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>m3j2hSrRLIcsADUDfI31dyw5O5A=09/05/2023 8:44:04 CH09/05/2023 8:44:04 CH</TimeStamp>
+        <ID>
+          <String>Video Games DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>lGNGvbeHoF3a4LEzTuvUDFaK+OA=09/05/2023 8:49:36 CH09/05/2023 8:49:35 CH</TimeStamp>
+        <ID>
+          <String>Video Games DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fN8SOYA6pxQ5YSIwLZBeFYeV6rc=09/05/2023 8:50:02 CH09/05/2023 8:50:01 CH</TimeStamp>
+        <ID>
+          <String>Dim Publisher</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XbGtnafNLQlwO9ECddOBVsjnh9A=10/05/2023 8:29:46 SA09/05/2023 8:50:01 CH</TimeStamp>
+        <ID>
+          <String>Dim Platform</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>nTXYJ6VK1gcmo7D192chZ3tNyc0=09/05/2023 8:52:35 CH09/05/2023 8:50:01 CH</TimeStamp>
+        <ID>
+          <String>Dim Genre</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>AWC2e2V+lE9UnE/8ftn5p+A3xu0=09/05/2023 8:52:35 CH09/05/2023 8:50:01 CH</TimeStamp>
+        <ID>
+          <String>Dim Year</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LH/lotOrEpBfpdLqdENsRHUiJQ8=09/05/2023 8:52:35 CH09/05/2023 8:50:02 CH</TimeStamp>
+        <ID>
+          <String>Dim Region</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Y4YNIJVp6ib3CEydyCF/I9DcBvo=09/05/2023 8:52:35 CH09/05/2023 8:50:02 CH</TimeStamp>
+        <ID>
+          <String>Dim Game</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>hyglTgJrt3zYjxbf8/F4oc3GYbQ=10/05/2023 8:29:46 SA09/05/2023 8:50:01 CHX/vZG0ht3iazdQUsOdhTlvhv86o=09/05/2023 8:50:02 CH09/05/2023 8:50:01 CH</TimeStamp>
+        <ID>
+          <String>Video Games DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>LmuMjsEXyL4+znZ6nMjYmUpP9UE=09/05/2023 8:43:15 CH09/05/2023 8:43:15 CH</TimeStamp>
+      <ID>
+        <String>sales_game</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-05-10T01:31:04.526667Z</LastDeployed>
+</DeploymentSnapshot>
