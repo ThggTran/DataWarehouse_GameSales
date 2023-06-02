@@ -1,2 +1,2 @@
 # DataWarehouse_GameSales
-SSAS, SSIS
+Project with SSAS, SSIS
